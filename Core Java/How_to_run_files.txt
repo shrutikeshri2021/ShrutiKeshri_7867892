@@ -1,0 +1,76 @@
+task 31 
+BasicJDBCConnection.java
+
+cd /d "c:\Users\Lenovo\Downloads\cognizant tasks\Core Java"
+
+# create/refresh college.db (helper)
+javac -cp ".;sqlite-jdbc.jar" CreateCollegeDb.java
+java  -cp ".;sqlite-jdbc.jar" CreateCollegeDb
+
+# compile & run demo
+javac -cp ".;sqlite-jdbc.jar" BasicJDBCConnection.java
+java  -cp ".;sqlite-jdbc.jar" BasicJDBCConnection
+
+I tested it, and it prints:
+101 Rahul
+102 Priya
+103 Aman
+ **********************************************
+
+Task 32
+StudentDAO
+Open Command Prompt
+
+cd /d "c:\Users\Lenovo\Downloads\cognizant tasks\Core Java"
+
+# ensure college.db exists (run CreateCollegeDb if needed)
+javac -cp ".;sqlite-jdbc.jar" CreateCollegeDb.java
+java  -cp ".;sqlite-jdbc.jar" CreateCollegeDb
+
+# compile & run StudentDAO
+javac -cp ".;sqlite-jdbc.jar" StudentDAO.java
+java  -cp ".;sqlite-jdbc.jar" StudentDAO
+
+Expected outputs:
+
+BasicJDBCConnection:
+101 Rahul
+102 Priya
+103 Aman
+
+StudentDAO:
+Student Record Updated
+
+
+***********************************
+
+
+task 33
+
+cd /d "c:\Users\Lenovo\Downloads\cognizant tasks\Core Java"
+
+# If bank.db missing, create it first (ensure it contains accounts 1 and 2).
+# If you have a helper CreateBankDb.java, run it:
+# javac -cp ".;sqlite-jdbc.jar" CreateBankDb.java
+# java  -cp ".;sqlite-jdbc.jar" CreateBankDb
+
+# compile & run TransactionHandling
+javac -cp ".;sqlite-jdbc.jar" TransactionHandling.java
+java  -cp ".;sqlite-jdbc.jar" TransactionHandling
+
+
+ ************************************************
+
+ Task 34
+
+
+
+
+ ***********
+ byte code
+C:\Users\Lenovo\Downloads\cognizant tasks\Core Java>javac ByteCodeDemo.java
+
+C:\Users\Lenovo\Downloads\cognizant tasks\Core Java>java ByteCodeDemo
+Bytecode Example
+
+

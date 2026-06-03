@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Box Model & Layout Control</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    background:#eef5ff;
+    margin:0;
+}
+
+/* Header */
+
+.header{
+    background:linear-gradient(
+        to right,
+        #0d6efd,
+        #6610f2
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+/* Event Card */
+
+.eventCard{
+
+    width:350px;
+
+    margin:40px auto;
+
+    padding:25px;
+
+    border:3px solid #0d6efd;
+
+    border-radius:12px;
+
+    background:white;
+
+    box-shadow:0 0 15px lightgray;
+}
+
+.eventCard h2{
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+.eventCard p{
+    color:#555;
+    line-height:1.6;
+}
+
+/* Outline Example */
+
+.highlightField{
+
+    display:block;
+
+    width:320px;
+
+    margin:20px auto;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    outline:3px solid orange;
+
+    border-radius:6px;
+}
+
+/* Visibility Examples */
+
+.hiddenText{
+
+    visibility:hidden;
+}
+
+.removedText{
+
+    display:none;
+}
+
+/* Info Cards */
+
+.demoBox{
+
+    width:80%;
+
+    max-width:700px;
+
+    margin:20px auto;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 0 10px lightgray;
+}
+
+.demoBox h3{
+    color:#198754;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <h1>📦 Box Model & Layout Control</h1>
+
+</div>
+
+<div class="eventCard">
+
+    <h2>🎵 Music Festival</h2>
+
+    <p>
+        This card demonstrates the CSS Box Model
+        using margin, padding and border properties.
+    </p>
+
+</div>
+
+<input
+type="text"
+class="highlightField"
+placeholder="Selected Field Example">
+
+<div class="demoBox">
+
+    <h3>Visibility Demo</h3>
+
+    <p>
+        The next paragraph uses
+        <b>visibility:hidden</b>.
+        Space will still be reserved.
+    </p>
+
+    <p class="hiddenText">
+        Hidden Using Visibility
+    </p>
+
+    <p>
+        The next paragraph uses
+        <b>display:none</b>.
+        No space will be reserved.
+    </p>
+
+    <p class="removedText">
+        Hidden Using Display None
+    </p>
+
+</div>
+
+</body>
+
+</html>

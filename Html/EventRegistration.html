@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Event Registration</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    background:#eef5ff;
+}
+
+.container{
+    width:450px;
+    margin:40px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 0 10px lightgray;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+}
+
+</style>
+
+<script>
+function registerEvent(){
+document.getElementById("msg").value=
+"Registration Successful!";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>🎉 Event Registration</h2>
+
+<form>
+
+<input type="text"
+placeholder="Enter Name"
+required
+autofocus>
+
+<input type="email"
+placeholder="Enter Email"
+required>
+
+<input type="date" required>
+
+<select required>
+<option>Workshop</option>
+<option>Seminar</option>
+<option>Sports</option>
+</select>
+
+<textarea
+placeholder="Message"></textarea>
+
+<button type="button"
+onclick="registerEvent()">
+Register
+</button>
+
+<output id="msg"></output>
+
+</form>
+
+</div>
+
+</body>
+</html>

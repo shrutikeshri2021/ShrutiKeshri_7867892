@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Debugging Demo</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    background:#eef5ff;
+    text-align:center;
+}
+
+.card{
+    width:350px;
+    margin:auto;
+    margin-top:50px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px lightgray;
+}
+
+button{
+    padding:10px 15px;
+    background:#198754;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+
+</style>
+
+<script>
+
+let userName = "Shruti Keshri";
+
+console.log("User Name :",userName);
+
+function testDebug(){
+
+    let totalUsers = 50;
+
+    console.log("Users :",totalUsers);
+
+    alert("Check Console Output");
+}
+
+</script>
+
+</head>
+<body>
+
+<div class="card">
+
+<h2>Chrome DevTools Demo</h2>
+
+<p>Open Console and Inspect Element</p>
+
+<button onclick="testDebug()">
+Run Script
+</button>
+
+</div>
+
+</body>
+</html>

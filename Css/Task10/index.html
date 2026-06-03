@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Responsive Community Portal</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#eef5ff;
+}
+
+/* Header */
+
+.header{
+
+    background:
+    linear-gradient(
+        to right,
+        #0d6efd,
+        #6610f2
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:3vh;
+}
+
+/* Navigation */
+
+nav{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    background:#0b5ed7;
+
+    padding:15px;
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+/* Main Content */
+
+.container{
+
+    width:80%;
+
+    margin:30px auto;
+}
+
+/* Cards */
+
+.cards{
+
+    display:flex;
+
+    gap:20px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+}
+
+.card{
+
+    width:25vw;
+
+    min-width:250px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 0 10px lightgray;
+
+    text-align:center;
+}
+
+.card img{
+
+    width:100%;
+
+    border-radius:8px;
+}
+
+.card h3{
+
+    margin-top:10px;
+
+    color:#0d6efd;
+}
+
+/* Media Query */
+
+@media screen and (max-width:768px){
+
+    nav{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    body{
+
+        font-size:14px;
+    }
+
+    .card{
+
+        width:90%;
+    }
+
+    .card img{
+
+        width:80%;
+    }
+
+    h1{
+
+        font-size:22px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <h1>📱 Responsive Community Portal</h1>
+
+    <p>
+        Works on Mobile, Tablet and Desktop
+    </p>
+
+</div>
+
+<nav>
+
+    <a href="#">Home</a>
+    <a href="#">Events</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+
+</nav>
+
+<div class="container">
+
+    <div class="cards">
+
+        <div class="card">
+
+            <img src="https://via.placeholder.com/300x180"
+                 alt="Event">
+
+            <h3>Music Festival</h3>
+
+            <p>
+                Enjoy live performances and fun activities.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://via.placeholder.com/300x180"
+                 alt="Event">
+
+            <h3>Food Fair</h3>
+
+            <p>
+                Explore delicious cuisines and local foods.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://via.placeholder.com/300x180"
+                 alt="Event">
+
+            <h3>Sports Meet</h3>
+
+            <p>
+                Participate in exciting sports competitions.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

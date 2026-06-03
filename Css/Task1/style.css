@@ -1,0 +1,34 @@
+/* Card Styles */
+
+.card{
+
+    width:500px;
+
+    margin:30px auto;
+
+    padding:20px;
+
+    background:white;
+
+    border-radius:10px;
+
+    box-shadow:0 0 10px lightgray;
+
+    text-align:center;
+}
+
+/* Heading Styles */
+
+h2{
+
+    color:#0d6efd;
+}
+
+/* Paragraph Styles */
+
+p{
+
+    color:#555;
+
+    line-height:1.6;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Video Invite</title>
+
+<script>
+
+function readyVideo(){
+document.getElementById("msg").innerHTML=
+"Video Ready To Play";
+}
+
+window.onbeforeunload=function(){
+return "Form not completed";
+}
+
+</script>
+
+</head>
+
+<body style="text-align:center;font-family:Arial;">
+
+<h2>🎥 Community Event Invite</h2>
+
+<video controls width="500"
+oncanplay="readyVideo()">
+
+<source src="promo.mp4"
+type="video/mp4">
+
+</video>
+
+<p id="msg"></p>
+
+</body>
+</html>

@@ -63,10 +63,84 @@ java  -cp ".;sqlite-jdbc.jar" TransactionHandling
 
  Task 34
 
+ Open Terminal
+
+Go to:
+C:\Users\Lenovo\Downloads\cognizant tasks\Core Java
+
+Then:
+cd CreateAndUseJavaModules
+
+
+Create Output Folder
+mkdir mods
+
+(If already exists, ignore the warning.)
+
+ Compile Module 1
+javac -d mods\com.utils com.utils\module-info.java com.utils\Utility.java
+
+
+ Compile Module 2
+javac --module-path mods -d mods\com.greetings com.greetings\module-info.java com.greetings\Greeting.java
+
+
+ Run Program
+java --module-path mods -m com.greetings/com.greetings.Greeting
+
+Output
+Welcome to Java Modules
+
+
+***********************************************88
+
+task 35
+
+Go to folder:
+
+cd "C:\Users\Lenovo\Downloads\cognizant tasks\Core Java\TCPClientServerChat"
+
+
+ Compile Both Files
+javac TCPServer.java
+javac TCPClient.java
+
+
+WE should get:
+TCPServer.class
+TCPClient.class
+
+
+Run Server
+
+Open Terminal 1:
+java TCPServer
+
+Output:
+Server Started...
+
+Leave this terminal open.
+
+step: Run Client
+Open another terminal.
+
+Go to same folder:
+cd "C:\Users\Lenovo\Downloads\cognizant tasks\Core Java\TCPClientServerChat"
+
+Run:
+java TCPClient
+
+Output
+Server Window
+Server Started...
+Client Connected
+Client : Hello from Client
+Client Window
+Server : Hello from Server
 
 
 
- ***********
+ **************
  byte code
 C:\Users\Lenovo\Downloads\cognizant tasks\Core Java>javac ByteCodeDemo.java
 
